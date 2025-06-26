@@ -1,0 +1,165 @@
+/* ベース */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0 10px 30px;
+}
+
+/* タイトル */
+h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #2e7d32;
+    margin: 20px 0;
+}
+
+/* 名前入力欄 */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* 曜日ごとのカード */
+.weekday-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* 曜日タイトル */
+.weekday-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #2e7d32;
+}
+
+/* ラベルとチェックボックス */
+label {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+/* 勤務不可メッセージ */
+.unavailable-text {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* カスタムドロップダウン */
+.dropdown {
+    position: relative;
+    width: 130px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.dropdown-label {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    color: #444;
+    text-align: center;
+    transition: border 0.2s;
+}
+
+.dropdown-label:hover {
+    border-color: #66bb6a;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 160px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-list div {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s;
+}
+
+.dropdown-list div:hover {
+    background-color: #66bb6a;
+    color: white;
+}
+
+/* 送信ボタン */
+button {
+    margin-top: 20px;
+    padding: 14px;
+    font-size: 17px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+    .dropdown {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .dropdown-label {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .weekday-container {
+        padding: 12px;
+    }
+
+    input[type="text"] {
+        font-size: 17px;
+    }
+}
