@@ -26,3 +26,5 @@ wsproto==1.2.0
 python-dotenv
 seaborn
 scikit-learn
+django-environ
+dj-database-url
